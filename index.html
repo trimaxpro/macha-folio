@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Macha — Pure Matcha</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;700;900&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- 3D Model Viewer -->
+  <script type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-mark">M</span>
+      <span>macha</span>
+    </a>
+
+    <nav>
+      <a href="#story">Story</a>
+      <a href="#ritual">Ritual</a>
+      <a href="#shop">Shop</a>
+    </nav>
+
+    <a href="#shop" class="nav-button">
+      Explore
+      <i data-lucide="arrow-up-right"></i>
+    </a>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-copy">
+
+        <div class="eyebrow">
+          <span></span>
+          CEREMONIAL GRADE MATCHA
+        </div>
+
+        <h1>
+          Slow down.<br>
+          <em>Whisk</em> better.
+        </h1>
+
+        <p>
+          A softer way to start the day. Stone-ground Japanese matcha
+          with a naturally rich taste, delicate aroma and quiet energy.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#shop" class="primary-button">
+            Discover matcha
+            <i data-lucide="arrow-right"></i>
+          </a>
+
+          <a href="#ritual" class="text-button">
+            Our ritual
+            <i data-lucide="play-circle"></i>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <div>
+            <strong>01</strong>
+            <span>Stone<br>ground</span>
+          </div>
+
+          <div>
+            <strong>02</strong>
+            <span>Single<br>origin</span>
+          </div>
+
+          <div>
+            <strong>03</strong>
+            <span>Pure<br>energy</span>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="hero-visual">
+
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+
+        <div class="vertical-label">JAPAN · UJI · 34°53'N</div>
+
+        <!-- Public 3D model example -->
+        <model-viewer
+          class="matcha-model"
+          src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+          camera-controls
+          auto-rotate
+          rotation-per-second="18deg"
+          shadow-intensity="0.7"
+          exposure="1"
+          environment-image="neutral"
+          disable-zoom>
+        </model-viewer>
+
+        <div class="product-card">
+          <div class="product-card-top">
+            <span>01 / 01</span>
+            <i data-lucide="leaf"></i>
+          </div>
+
+          <div>
+            <small>ORIGIN</small>
+            <strong>Uji, Kyoto</strong>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- STORY -->
+    <section class="story" id="story">
+
+      <div class="section-number">01</div>
+
+      <div class="story-heading">
+        <span>THE QUIET CUP</span>
+        <h2>
+          Green, but<br>
+          <i>never</i> ordinary.
+        </h2>
+      </div>
+
+      <div class="story-text">
+        <p>
+          Macha is made for the moments between things. A slow morning,
+          an afternoon reset, or five minutes away from the noise.
+        </p>
+
+        <a href="#ritual" class="underlined-link">
+          Discover the ritual
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
+
+    </section>
+
+
+    <!-- RITUAL -->
+    <section class="ritual" id="ritual">
+
+      <div class="ritual-intro">
+        <span class="section-label">02 / THE RITUAL</span>
+
+        <h2>
+          Three minutes.<br>
+          Nothing complicated.
+        </h2>
+
+        <p>
+          The traditional preparation, simplified for everyday life.
+        </p>
+      </div>
+
+      <div class="steps">
+
+        <article>
+          <span>01</span>
+          <i data-lucide="flame"></i>
+          <h3>Warm</h3>
+          <p>Heat fresh water until it's warm, never boiling.</p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <i data-lucide="circle-dot"></i>
+          <h3>Scoop</h3>
+          <p>Add two grams of finely milled ceremonial matcha.</p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <i data-lucide="waves"></i>
+          <h3>Whisk</h3>
+          <p>Whisk gently until a soft, creamy foam appears.</p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT -->
+    <section class="shop" id="shop">
+
+      <div class="shop-copy">
+        <span class="section-label">03 / THE ORIGINAL</span>
+
+        <h2>
+          Your daily<br>
+          <em>green ritual.</em>
+        </h2>
+
+        <p>
+          Ceremonial matcha selected for its balanced umami,
+          smooth finish and vibrant natural character.
+        </p>
+
+        <div class="price-row">
+          <strong>₹1,490</strong>
+          <span>30g · ceremonial grade</span>
+        </div>
+
+        <button class="buy-button" id="buyButton">
+          Add to ritual
+          <i data-lucide="shopping-bag"></i>
+        </button>
+
+        <div class="shipping">
+          <i data-lucide="package-check"></i>
+          Free shipping on orders over ₹1,999
+        </div>
+      </div>
+
+      <div class="product-art">
+        <div class="can">
+          <div class="can-top"></div>
+
+          <div class="can-label">
+            <span>M</span>
+            <small>CEREMONIAL</small>
+            <strong>MATCHA</strong>
+            <i>宇治</i>
+            <small>UJI · KYOTO</small>
+          </div>
+        </div>
+
+        <div class="shadow"></div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <span>macha</span>
+    <span>Made for slower mornings · © 2026</span>
+
+    <a href="#">
+      Back to top
+      <i data-lucide="arrow-up"></i>
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
